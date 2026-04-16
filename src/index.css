@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant+Garamond", serif;
+
+  /* Custom Palette from User */
+  --color-poker-dark: #1C1C1C;
+  --color-poker-dark-light: #2B2B2B;
+  --color-poker-gold: #B59440;
+  --color-poker-gold-dark: #A57B2D;
+  --color-poker-wine: #720C35;
+  --color-poker-wine-light: #8E1A46;
+  --color-poker-light: #F4F4F4;
+  --color-poker-light-dark: #E6E6E6;
+}
+
+@layer base {
+  body {
+    @apply bg-poker-dark text-poker-light antialiased;
+  }
+}
